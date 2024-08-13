@@ -20,7 +20,7 @@
 
 /* Shared styles */
 .container{
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 2.5rem;
 }
@@ -269,7 +269,7 @@ main{
     margin-top: 50px;
 }
 .training-titlebar p{
-    width: 38rem;
+    width: 100%;
     margin: 1rem 0 2rem;
 }
 .training-images .row1{
@@ -331,7 +331,96 @@ main{
 }
 
 
+.bmi-wrapper{
+    padding: 60px 0 ;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+.bmi-section{
+    background-color: rgb(34, 34, 34);
+}
+.bmi-title-wrapper{
+    padding-top: 50px;
+    width: 100%;
+    background-color: #000000;
+}
+.bmi-title-wrap{
+    width: 45%;
+    margin: 0 auto;
+    padding: 2rem 0 2.5rem;
+}
+.bmi-title-wrap p{
+    margin: 1rem 0;
+}
+
+
+.bmi-chart{
+    width: 40%;
+}
+.calculate-bmi{
+    width: 50%;
+}
+.bmi-chart caption{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 38px;
+}
+table{
+    border-collapse: collapse;
+}
+thead td{
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+tbody td{
+
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+}
+
+.bmi-title p{
+    margin: 1rem 0 1.5rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(3, 2.6rem);
+    gap: 12px;
+}
+.activity{
+    grid-column: span 2;
+}
+.form-btn{
+    margin-top: 1.5rem;
+    width: 200px;
+}
+.form input, .form select{
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form input::placeholder, form select{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+
+}
+
 @media screen and (max-width: 576px) {
+    .container{
+        width: 85%;
+    }
     .nav .menu{
         display: none;
     }
@@ -339,8 +428,11 @@ main{
         display: block;
         color: white;
     }
-    .banner, .exercise-container, .run-wrapper{
+    .banner, .exercise-container, .run-wrapper, .bmi-wrapper{
         flex-direction: column;
+    }
+    .banner-content{
+        margin-top: 50px;
     }
     .banner-image{
         margin-top: 2.5rem;
@@ -348,6 +440,10 @@ main{
     .banner-content, .run-content, .run-image {
         width: 100%;
     }
+    .banner-content .secondary, .primary{
+        padding: 11px 20px;
+    }
+
     .workout-cart {
         top: 3.5rem;
         right: -14.3rem;
@@ -364,7 +460,7 @@ main{
     .exercise-container, .run-wrapper{
         gap: 2.5rem;
     }
-    .run-content, .btn{
+    .run-content, .btn, .training-titlebar p, .bmi-chart{
         width: 100%;
     }
     .training-images .row1{
@@ -372,6 +468,7 @@ main{
         background-position: right;
         grid-template-rows: repeat(1, 150px);
     }
+
     .training-images .row1 .img1{
         padding-top: 114px;
     }
@@ -385,4 +482,17 @@ main{
         grid-template-columns: 45% 55%;
         grid-template-rows: repeat(1, 150px);
     }
+    .bmi-title-wrap {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0rem 0 1rem;
+    }
+    .bmi-wrapper {
+        padding: 40px 0;
+    }
+    .calculate-bmi {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
 }
