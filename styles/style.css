@@ -265,7 +265,9 @@ main{
     
 }
 
-
+.training-wrapper{
+    margin-top: 50px;
+}
 .training-titlebar p{
     width: 38rem;
     margin: 1rem 0 2rem;
@@ -273,7 +275,7 @@ main{
 .training-images .row1{
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(1, 200px);
 }
 
 .row1 .img1, .row1 .img2, .row1 .img3{
@@ -283,34 +285,51 @@ main{
 }
 
 .training-images .row1 .img1{
-    background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url('../images/exercise1.jpg');
-    /* background-color: green; */
-
+    background: linear-gradient(0deg, rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)), url('../images/exercise1.jpg');
+    padding: 150px 0 0 30px;
+    color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .training-images .row1 .img2{
-    background-image: url('../images/exercise2.png');
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url('../images/exercise2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .training-images .row1 .img3{
-    background-image: url('../images/exercise3.png');
-}
-.training-images .row1 .img1, .training-images .row1 .img2, .training-images .row1 .img3{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/exercise3.png');
+    padding: 150px 0 0 30px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.img4{
-    height: 215px;
-    background-color: rgba(6, 255, 210, 0.5);
-    background-origin: content-box;
-}
-.img4 img{
-    height: 100%;
-}
-
 .training-images .row1 p{
     color: var(--white);
 }
+
+.row2{
+    display: grid;
+    grid-template-columns: 40% auto 30%;
+    grid-template-rows: repeat(1, 200px);
+    color: #FFFFFF;
+}
+
+.row2 img{
+    width: 100%;
+    height: 100%;
+}
+.img-para{
+    position: relative;
+}
+.img-para p{
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+}
+
 
 @media screen and (max-width: 576px) {
     .nav .menu{
@@ -348,5 +367,22 @@ main{
     .run-content, .btn{
         width: 100%;
     }
-
+    .training-images .row1{
+        grid-template-columns: 55% 45%;
+        background-position: right;
+        grid-template-rows: repeat(1, 150px);
+    }
+    .training-images .row1 .img1{
+        padding-top: 114px;
+    }
+    .training-images .row1 .img3{
+        display: none;
+    }
+    .img-para3{
+        display: none;
+    }
+    .row2{
+        grid-template-columns: 45% 55%;
+        grid-template-rows: repeat(1, 150px);
+    }
 }
