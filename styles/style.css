@@ -414,7 +414,52 @@ td{
 .form input::placeholder, form select{
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
+}
 
+
+.team-wrapper{
+    background-color: #000000;
+    padding-bottom: 4rem;
+}
+.team-titlebar{
+    text-align: center;
+}
+.team-titlebar p{
+    width: 55%;
+    margin: 1rem auto 2rem;
+}
+.team-members{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 16px;
+}
+.team-members img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+.team-members div{
+    position: relative;
+}
+.member-name{
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+}
+.member-name h4{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 900;
+}
+.member-name p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 576px) {
@@ -495,4 +540,7 @@ td{
         margin-top: 2rem;
     }
 
+    .team-members{
+        grid-template-columns: 1fr;
+    }
 }
