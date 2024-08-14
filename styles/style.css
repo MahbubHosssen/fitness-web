@@ -462,6 +462,68 @@ td{
     margin-top: 5px;
 }
 
+
+
+.footer{
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+}
+.footer-wrap{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+.fitness-column{
+    width: 40%;
+    margin-right: 5rem;
+
+}
+.fitness-column h1{
+    font-size: 50px;
+    color: rgba(230, 83, 60, 1);
+    font-weight: 900;
+    font-style: italic;
+}
+.fitness-column p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 1.5rem 0;
+    line-height: 22px;
+}
+.about-column{
+    width: 30%;
+}
+.about-column h3, .service-column h3{
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+}
+.about-column ul, .service-column ul{
+    margin-left: -10px;
+}
+.about-column li, .service-column li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    margin: 15px;
+    
+}
+.service-column{
+    width: 30%;
+}
+.reserve{
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    text-align: center;
+}
+.reserve p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
 @media screen and (max-width: 576px) {
     .container{
         width: 85%;
@@ -473,7 +535,7 @@ td{
         display: block;
         color: white;
     }
-    .banner, .exercise-container, .run-wrapper, .bmi-wrapper{
+    .banner, .exercise-container, .run-wrapper, .bmi-wrapper, .footer-wrap{
         flex-direction: column;
     }
     .banner-content{
@@ -482,16 +544,17 @@ td{
     .banner-image{
         margin-top: 2.5rem;
     }
-    .banner-content, .run-content, .run-image {
+    .banner-content, .run-content, .run-image, .fitness-column, .about-column, .service-column {
         width: 100%;
     }
     .banner-content .secondary, .primary{
-        padding: 11px 20px;
+        padding: 11px 18px;
     }
-
     .workout-cart {
-        top: 3.5rem;
-        right: -14.3rem;
+        width: 10rem;
+        top: 4.1rem;
+        right: -13.3rem;
+        padding: 10px 0 10px 24px;
     }
     .video-cart{
         width: 11rem;
@@ -539,8 +602,12 @@ td{
         width: 100%;
         margin-top: 2rem;
     }
-
     .team-members{
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 250px);
     }
+    .team-titlebar p{
+        width: 83%;
+    }
+
 }
