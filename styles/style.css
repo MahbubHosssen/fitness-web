@@ -344,20 +344,6 @@ main{
     padding: 150px 0 0 30px;
 }
 
-.row2 img{
-    width: 100%;
-    height: 100%;
-}
-.img-para{
-    position: relative;
-}
-.img-para p{
-    position: absolute;
-    bottom: 10%;
-    left: 8%;
-}
-
-
 .bmi-wrapper{
     padding: 60px 0 ;
     display: flex;
@@ -485,11 +471,74 @@ td{
 }
 .member-name p{
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(112, 106, 106, 0.6);
     margin-top: 5px;
 }
 
+.membership{
+    background-color: #000000;
+    text-align: center;
+}
+.membership h1{
+    color: #FFFFFF;
+    font-size: 43px;
+    padding: 0.5rem 0 2rem;
+}
+.membership-wrap{
+    padding: 0rem 0 3rem;
+    /* background-color: #555454; */
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+.card{
+    width: 32%;
+    padding: 2rem;
+    background-color: #555454;
+    border-radius: 10px;
+}
+.card h1{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 800;
+    border-bottom: 1px solid #312c2c;
+    padding-bottom: 1rem;
+}
+.card h2{
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 1rem;
+}
 
+.card p{
+    color: #d1cdcdc0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.card ul{
+    padding-left: 1.4rem;
+    padding-bottom: 1rem;
+}
+.card ul li{
+    list-style:decimal;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #0e0b0b;
+}
+.card-btn{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+}
+.card-btn:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
 
 .footer{
     width: 100%;
@@ -533,8 +582,7 @@ td{
     list-style: none;
     color: rgba(255, 255, 255, 0.5);
     font-size: 18px;
-    margin: 15px;
-    
+    margin: 15px; 
 }
 .service-column{
     width: 30%;
@@ -562,7 +610,7 @@ td{
         display: block;
         color: white;
     }
-    .banner, .exercise-container, .run-wrapper, .bmi-wrapper, .footer-wrap{
+    .banner, .exercise-container, .run-wrapper, .bmi-wrapper, .footer-wrap,.membership-wrap{
         flex-direction: column;
     }
     .banner-content{
@@ -574,7 +622,7 @@ td{
     .btn-club{
         display: none;
     }
-    .banner-content, .run-content, .run-image, .fitness-column, .about-column, .service-column {
+    .banner-content, .run-content, .run-image, .fitness-column, .about-column, .service-column, .card {
         width: 100%;
     }
     .banner-content .secondary, .primary{
@@ -641,5 +689,6 @@ td{
     .team-titlebar p{
         width: 83%;
     }
+
 
 }
